@@ -4444,8 +4444,19 @@ td:last-child {
 .motivation-text {
     text-align: center;
 }
-.entry__thumb img {
-    width: 100% !important;
+.entry__thumb {
     height: 250px !important;
+    width: 100%;
+    overflow: hidden !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+}
+
+.entry__thumb img {
+    height: 100% !important;
+    width: auto !important;
     object-fit: cover !important;
-    display: block !important;
+    display: block;
+}
