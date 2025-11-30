@@ -4444,19 +4444,20 @@ td:last-child {
 .motivation-text {
     text-align: center;
 }
-.entry__thumb {
-    height: 250px !important;
+/* ===== IMAGES DU PORTFOLIO — TAILLE CARRÉE ===== */
+
+.s-works .entry__thumb {
     width: 100%;
-    overflow: hidden !important;
+    height: 250px; /* Taille du carré (tu peux mettre 300px si tu veux + grand) */
     display: flex;
-    align-items: center;
     justify-content: center;
-    background: #ffffff;
+    align-items: center;
+    background: white;
+    overflow: hidden;
 }
 
-.entry__thumb img {
-    height: 100% !important;
-    width: auto !important;
-    object-fit: cover !important;
-    display: block;
+.s-works .entry__thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Garde les proportions sans couper */
 }
